@@ -18,7 +18,6 @@ return new class extends Migration
             $table->timestamp('phone_verified_at')->nullable();
             $table->string('image')->nullable();
             $table->string('email')->nullable()->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->text('address')->nullable();
             $table->decimal('latitude', 10, 7)->nullable();
             $table->decimal('longitude', 10, 7)->nullable();
